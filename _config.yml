@@ -27,6 +27,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  ledocaio
 
+# Define header pages
+header_pages:
+  - index.md
+  - about.md
+  - posts.md
+  - portfolio.md
+
 # Build settings
 theme: minima
 plugins:
