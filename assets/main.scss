@@ -21,10 +21,10 @@ $background-color-dark: #040D12;
 $text-color-dark: #93B1A6;
 
 // Light Theme Colors (Optional: If you want to toggle between light and dark themes)
-$primary-color-light: #183D3D;
-$secondary-color-light: #5C8374;
-$background-color-light: #93B1A6;
-$text-color-light: #040D12;
+$primary-color-light: #854836;
+$secondary-color-light: #F5B553;
+$background-color-light: #F7F7F7;
+$text-color-light: #000000;
 
 
 // Font variables
@@ -33,8 +33,8 @@ $body-font: "Roboto Slab", serif;
 // Apply font and colors
 body {
   font-family: "Roboto Slab", serif;
-  background-color: $background-color-dark;
-  color: $text-color-dark !important;
+  background-color: $background-color-light;
+  color: $text-color-light !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,33 +42,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $primary-color-dark;
+  color: $primary-color-light;
 }
 
-.site-title:visited, .trigger, .site-nav, .page-link {
-  font-family: $body-font;
-  background-color: $background-color-dark;
-  color: $text-color-dark !important;
+.site-title:visited, .trigger, .site-nav, .page-link, .site-title {
+  background-color: $background-color-light;
+  color: $text-color-light !important;
+  font-family: "Roboto Slab", serif !important;
+  font-size: 20px !important;	
+  font-weight:400 !important;	
+}
+
+.site-title:visited, .site-title {
+  background-color: $background-color-light;
+  color: $text-color-light !important;
+  font-family: "Roboto Slab", serif !important;
+  font-size: 30px !important;	
+  font-weight:400 !important;	
 }
 
 .site-title:hover, .site-nav:hover, .page-link:hover {
   font-family: $body-font;
-  background-color: $primary-color-dark !important;
-  color: $text-color-dark !important;
+  background-color: $primary-color-light !important;
+  color: $text-color-light !important;
 }
 
 
 
 .post-meta, a.visited, .site-footer, .footer-col-wrapper {
   font-family: $body-font;
-  background-color: $background-color-dark;
-  color: $text-color-dark !important;
+  background-color: $background-color-light;
+  color: $text-color-light !important;
 }
 .language-plaintext {
-  background-color: $primary-color-dark !important;
-  color: $text-color-dark !important;
+  background-color: $secondary-color-light !important;
+  color: $text-color-light !important;
 }
 
 a:hover {
-  color: $secondary-color-dark;
+  color: $secondary-color-light;
 }
