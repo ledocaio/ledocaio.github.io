@@ -3,3 +3,72 @@
 ---
 
 @import "minima";
+// assets/scss/style.scss
+
+// Font import
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+// Color variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$background-color: #ecf0f1;
+$text-color: #2c3e50;
+
+// Dark Theme Colors
+$primary-color-dark: #183D3D;
+$secondary-color-dark: #5C8374;
+$background-color-dark: #040D12;
+$text-color-dark: #93B1A6;
+
+// Light Theme Colors (Optional: If you want to toggle between light and dark themes)
+$primary-color-light: #183D3D;
+$secondary-color-light: #5C8374;
+$background-color-light: #93B1A6;
+$text-color-light: #040D12;
+
+
+// Font variables
+$body-font: "Roboto Slab", serif;
+
+// Apply font and colors
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: $background-color-dark;
+  color: $text-color-dark !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $body-font;
+}
+
+a {
+  color: $primary-color-dark;
+}
+
+.site-title:visited, .trigger, .site-nav, .page-link {
+  font-family: $body-font;
+  background-color: $background-color-dark;
+  color: $text-color-dark !important;
+}
+
+.site-title:hover, .site-nav:hover, .page-link:hover {
+  font-family: $body-font;
+  background-color: $primary-color-dark !important;
+  color: $text-color-dark !important;
+}
+
+
+
+.post-meta, a.visited, .site-footer, .footer-col-wrapper {
+  font-family: $body-font;
+  background-color: $background-color-dark;
+  color: $text-color-dark !important;
+}
+.language-plaintext {
+  background-color: $primary-color-dark !important;
+  color: $text-color-dark !important;
+}
+
+a:hover {
+  color: $secondary-color-dark;
+}
