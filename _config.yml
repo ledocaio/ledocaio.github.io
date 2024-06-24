@@ -20,12 +20,14 @@
 
 title: Caio Ledo
 email: caiobledo@gmail.com
+phone: +1 (778) 652-3918
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my personal blog. I write about software development, data science, and other topics that I find interesting.
+  Data & Technology
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  ledocaio
+linkedin_username: caioledo
 
 # Define header pages
 header_pages:
