@@ -68,7 +68,7 @@ a {
 
 
 
-.post-meta, a.visited, .site-footer, .footer-col-wrapper {
+.post-meta, a.visited, .site-footer, .footer-col-wrapper   {
   font-family: $body-font;
   background-color: $background-color-light;
   color: $text-color-light !important;
@@ -80,4 +80,48 @@ a {
 
 a:hover {
   color: $secondary-color-light;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+}
+.about-container img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 1000px; /* Adjust the width as needed */
+  height: auto;
+}
+.about-container .text-content {
+  max-width: 600px; /* Adjust the max-width as needed */
+}
+
+.work-experience{
+  display: flex;
+  align-items: center;
+  gap:50px;
+}
+
+.work-experience .company-logo {
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+  width: 700px; /* Adjust the width as needed */
+  height: auto; /* You can set a fixed height if needed */
+  padding-left: 50px; /* Add padding to create space on the left */
+}
+
+.work-experience img {
+  border-radius: 0%;
+  max-width: 100%; /* Ensure the image fits within the container */
+  max-height: 100%; /* Ensure the image fits within the container */
+}
+
+.work-experience .text-content{
+  max-width: 600px; /* Adjust the max-width as needed */
+}
+
+.work-experience h3{
+  margin: 0; /* Remove margin to eliminate space between lines */
+  padding: 0;
 }
