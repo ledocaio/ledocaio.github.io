@@ -37,8 +37,12 @@ body {
   color: $text-color-light !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3,h2, h4, h5, h6 {
   font-family: $body-font;
+}
+
+h2 {
+  padding-top: 50px !important;
 }
 
 a {
@@ -96,32 +100,76 @@ a:hover {
   max-width: 600px; /* Adjust the max-width as needed */
 }
 
+.work-experience-container {
+  display: grid;
+  grid-template-columns: 100px auto;
+  column-gap: 50px;
+  row-gap: 15px;
+  align-items: start;
+}
 .work-experience{
+  display: contents;
+}
+
+.company-logo {
+  grid-column: 1; /* Logo in the first column */
+  height: 100%;
   display: flex;
   align-items: center;
-  gap:50px;
+  justify-content: center;
+  padding-left: 50px; /* Adjust as needed */
 }
 
-.work-experience .company-logo {
-  display: flex;
-  align-items: center; /* Center the image vertically */
-  justify-content: center; /* Center the image horizontally */
-  width: 700px; /* Adjust the width as needed */
-  height: auto; /* You can set a fixed height if needed */
-  padding-left: 50px; /* Add padding to create space on the left */
-}
-
-.work-experience img {
+.company-logo img {
   border-radius: 0%;
-  max-width: 100%; /* Ensure the image fits within the container */
-  max-height: 100%; /* Ensure the image fits within the container */
+  max-width: 100px; /* Ensure the image fits within the container */
+  max-height: 100px; /* Ensure the image fits within the container */
 }
 
-.work-experience .text-content{
+.work-experience .text-container{
+  grid-column: 2; /* Text in the second column */
   max-width: 600px; /* Adjust the max-width as needed */
 }
 
 .work-experience h3{
   margin: 0; /* Remove margin to eliminate space between lines */
   padding: 0;
+
+}
+
+.academic-background-container {
+  display: grid;
+  grid-template-columns: 600px auto;
+  column-gap: 50px;
+  row-gap: 15px;
+  align-items: start;
+}
+.academic-background{
+  display: contents;
+}
+
+.uni_logo {
+  grid-column: 2; /* Logo in the first column */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px; /* Adjust as needed */
+}
+
+.uni_logo img {
+  border-radius: 0%;
+  max-width: 100px; /* Ensure the image fits within the container */
+  max-height: 100px; /* Ensure the image fits within the container */
+}
+
+.academic-background .text-container{
+  grid-column: 1; /* Text in the second column */
+  max-width: 1500px; /* Adjust the max-width as needed */
+}
+
+.academic-background h3,h4{
+  margin: 0; /* Remove margin to eliminate space between lines */
+  padding: 0;
+
 }

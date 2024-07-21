@@ -3,59 +3,113 @@ layout: default
 ---
 
 <div class="home">
-    <div class="about-container">
-      <div class="text-container">
+  <div class="about-container">
+    <div class="text-container">
       <h2>About me</h2>
-        <p>
+      <p>
         Data Analytics Specialist with 10+ years in Procurement and Supply Chain, leading Business Intelligence Logistics at a top international food company. Holds a degree in Economics from PUCSP and an MBA in Data Science and Analytics from USP/ESALQ, with expertise in Tableau, SQL, and Python. Proven in project management, optimizing operations, and managing critical KPIs for operational excellence.
-        </p>
-      </div>
-      <div class="profile_picture">
-        <img src="profile-picture.jpg" alt="Profile Picture">
-      </div>
+      </p>
     </div>
-
-    <h2>Work Experience</h2>
+    <div class="profile_picture">
+      <img src="profile-picture.jpg" alt="Profile Picture">
+    </div>
+  </div>
+  <h2>Work Experience</h2>
+    <div class="work-experience-container">
     <div class="work-experience">
       <div class="company-logo">
         <img src="genmills.png" alt="genmills">
       </div>
       <div class="text-container">
-        <p>
         <h3>Logistics Intelligence Coordinator</h3>
         <h4>General Mills - Brazil</h4>
-        Data Analytics Specialist with 10+ years in Procurement and Supply Chain, leading Business Intelligence Logistics at a top international food company. Holds a degree in Economics from PUCSP and an MBA in Data Science and Analytics from USP/ESALQ, with expertise in Tableau, SQL, and Python. Proven in project management, optimizing operations, and managing critical KPIs for operational excellence.
-        </p>
-      </div>      
+        <h5>2023 - Current</h5>
+        <p>
+          At General Mills, I lead a data team to create the logis  tics control tower, adapting KPIs from Excel into a BI model using Tableau and BigQuery. I collaborate with international teams, manage logistics KPIs, and conduct data analyses to enhance efficiency​​.        </p>
+      </div>
     </div>
 
+    <div class="work-experience">
+      <div class="company-logo">
+        <img src="dasa.png" alt="dasa">
+      </div>
+      <div class="text-container">
+        <h3>Supply Chain Data Coordinator</h3>
+        <h4>Dasa - Brazil</h4>
+        <h5>2018 - 2023</h5>
+        <p>
+          At DASA, I led a team of data analysts to deliver the S&OP strategy, creating consumption forecasts and automating supply processes using Tableau and Python. I developed KPIs for procurement and supply chain, and implemented a Supply Chain Datalake using GCP for comprehensive analysis​​.        </p>
+      </div>
+    </div>
+
+    <div class="work-experience">
+      <div class="company-logo">
+        <img src="krafthein.png" alt="krafthein">
+      </div>
+      <div class="text-container">
+        <h3>Procurement Analyst</h3>
+        <h4>Kraft Heinz - Brazil</h4>
+        <h5>2012 - 2018</h5>
+        <p>
+          At Kraft Heinz, I managed the eSourcing team for Latin America, developed procurement KPIs, and improved supply chain efficiency. This experience laid the foundation for my current data analytics role. I also served as a key user for SAP Khatalyst, overseeing its implementation and training.
+        </div>
+    </div>
+  </div>
+
+  <h2>Academic Background</h2>
+  <div class="academic-background-container">
+
+    <div class="academic-background">
+      <div class="text-container">
+        <h3>MBA in Data Science and Analytics</h3>
+        <h4>USP/ESALQ - Brazil</h4>
+        <h5>2021 - 2023</h5>
+      </div>
+
+      <div class="uni_logo">
+        <img src="ESALQ.png" alt="esalq">
+      </div>
+    </div>
+
+    <div class="academic-background">
+      <div class="text-container">
+        <h3>Bachelor's Degree in Economics</h3>
+        <h4>PUCSP - Brazil</h4>
+        <h5>2012 - 2018</h5>
+      </div>
+
+      <div class="uni_logo">
+        <img src="PUCSP.png" alt="pucsp">
+      </div>
+  </div>
 
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
+  <!--
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  <ul class="post-list">
+    {%- for post in site.posts -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
+-->
 
 </div>
